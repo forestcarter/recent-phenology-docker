@@ -1,0 +1,5 @@
+{
+  "video": false,
+
+  "CYPRESS_baseUrl": "http://app-hydro:5000"
+}

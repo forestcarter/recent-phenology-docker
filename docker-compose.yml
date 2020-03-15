@@ -1,0 +1,94 @@
+version: "3.7"
+services:
+  postgres-boiler:
+    container_name: postgres-boiler
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile-postgres
+    image: postgresimage-boiler
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - WEBCLIENT_PW=${WEBCLIENT_PW}
+    volumes:
+      - db-boiler:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  app-boiler:
+    container_name: app-boiler
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile-flask
+    image: flaskimage-boiler
+    env_file:
+      - .env
+    environment:
+      - FLASK_ENV=prod
+      - POSTGRES_USER=webclient
+      - WEBCLIENT_PW=${WEBCLIENT_PW}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - SECRET_KEY=${SECRET_KEY}
+    # volumes:
+    #   - flask-boiler:/var/www/apache-flask/api
+    volumes:
+      - ./api:/var/www/apache-flask/api
+    ports:
+      - "80:80"
+    tty: true
+    depends_on:
+      - postgres-boiler
+    entrypoint:
+      - /var/www/apache-flask/scripts/docker_script.sh
+
+  cypress-boiler:
+    container_name: cypress-boiler
+    build:
+      context: .
+      dockerfile: Dockerfile-cypress
+    image: cypressimage-boiler
+    env_file:
+      - .env
+    tty: true
+    depends_on:
+      - app-boiler
+
+  geoserver-boiler:
+    container_name: geoserver-boiler
+    build:
+      context: .
+      dockerfile: Dockerfile-geoserver
+      args:
+        - GS_VERSION=2.15.2
+    image: geoserverimage-boiler
+    environment:
+      - GEOSERVER_ADMIN_PASSWORD=${GEOSERVER_ADMIN_PASSWORD}
+    volumes:
+      - geoserver-boiler:/opt/geoserver/data_dir
+    restart: on-failure
+    ports:
+      - "8600:8080"
+    restart: on-failure
+    env_file:
+      - .env
+    depends_on:
+      - postgres-boiler
+    healthcheck:
+      test: curl --fail -s http://localhost:8080/ || exit 1
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+        
+volumes:
+  geoserver-boiler:
+    name: geoserver-boiler
+    
+  db-boiler:
+    name: db-boiler
+    
+
+# gb && cp -r public/static/ ../api/static ; cp -r public/* ../api/static ; cd ..
+# docker exec -t postgres-boiler pg_dump -c -U postgres boiler > "/c/Users/fd7/OneDrive - Oak Ridge National Laboratory/boiler_files/dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql"

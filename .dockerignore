@@ -1,0 +1,16 @@
+*
+!api
+!manage.py
+!requirements.txt
+!creds.ini
+!scripts
+!gatsby/public/
+!/docker-entrypoint-initdb.d/
+!docker-entrypoint.sh
+!api/creds.ini
+!resources
+!geoserver.env
+!flask.env
+!gatsby/cypress/
+!gatsby/cypress.json
+!apache/
