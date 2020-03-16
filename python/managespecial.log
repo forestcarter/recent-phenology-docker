@@ -1,0 +1,123 @@
+Archive:  /home/forest_carter/python/static/2019104.zip
+  inflating: /home/forest_carter/python/static/2019104/US_eMAE_NDVI.2019.098-104.QKM.VI_ACQI.006.2019105043718.tif  
+  inflating: /home/forest_carter/python/static/2019104/US_eMAE_NDVI.2019.098-104.QKM.VI_ACQT.006.2019105043718.txt  
+  inflating: /home/forest_carter/python/static/2019104/US_eMAE_NDVI.2019.098-104.QKM.VI_META.006.2019105050911.met  
+  inflating: /home/forest_carter/python/static/2019104/US_eMAE_NDVI.2019.098-104.QKM.VI_NDVI.006.2019105043718.jpg  
+  inflating: /home/forest_carter/python/static/2019104/US_eMAE_NDVI.2019.098-104.QKM.VI_NDVI.006.2019105043718.tif  
+  inflating: /home/forest_carter/python/static/2019104/US_eMAE_NDVI.2019.098-104.QKM.VI_QUAL.006.2019105043718.tif  
+Archive:  /home/forest_carter/python/static/2019097.zip
+  inflating: /home/forest_carter/python/static/2019097/US_eMAE_NDVI.2019.091-097.QKM.VI_ACQI.006.2019098043832.tif  
+  inflating: /home/forest_carter/python/static/2019097/US_eMAE_NDVI.2019.091-097.QKM.VI_ACQT.006.2019098043832.txt  
+  inflating: /home/forest_carter/python/static/2019097/US_eMAE_NDVI.2019.091-097.QKM.VI_META.006.2019098050856.met  
+  inflating: /home/forest_carter/python/static/2019097/US_eMAE_NDVI.2019.091-097.QKM.VI_NDVI.006.2019098043832.jpg  
+  inflating: /home/forest_carter/python/static/2019097/US_eMAE_NDVI.2019.091-097.QKM.VI_NDVI.006.2019098043832.tif  
+  inflating: /home/forest_carter/python/static/2019097/US_eMAE_NDVI.2019.091-097.QKM.VI_QUAL.006.2019098043832.tif  
+Archive:  /home/forest_carter/python/static/2019090.zip
+  inflating: /home/forest_carter/python/static/2019090/US_eMAE_NDVI.2019.084-090.QKM.VI_ACQI.006.2019091180541.tif  
+  inflating: /home/forest_carter/python/static/2019090/US_eMAE_NDVI.2019.084-090.QKM.VI_ACQT.006.2019091180541.txt  
+  inflating: /home/forest_carter/python/static/2019090/US_eMAE_NDVI.2019.084-090.QKM.VI_META.006.2019091183818.met  
+  inflating: /home/forest_carter/python/static/2019090/US_eMAE_NDVI.2019.084-090.QKM.VI_NDVI.006.2019091180541.jpg  
+  inflating: /home/forest_carter/python/static/2019090/US_eMAE_NDVI.2019.084-090.QKM.VI_NDVI.006.2019091180541.tif  
+  inflating: /home/forest_carter/python/static/2019090/US_eMAE_NDVI.2019.084-090.QKM.VI_QUAL.006.2019091180541.tif  
+Archive:  /home/forest_carter/python/static/2019083.zip
+  inflating: /home/forest_carter/python/static/2019083/US_eMAE_NDVI.2019.077-083.QKM.VI_ACQI.006.2019084044121.tif  
+  inflating: /home/forest_carter/python/static/2019083/US_eMAE_NDVI.2019.077-083.QKM.VI_ACQT.006.2019084044121.txt  
+  inflating: /home/forest_carter/python/static/2019083/US_eMAE_NDVI.2019.077-083.QKM.VI_META.006.2019084051159.met  
+  inflating: /home/forest_carter/python/static/2019083/US_eMAE_NDVI.2019.077-083.QKM.VI_NDVI.006.2019084044121.jpg  
+  inflating: /home/forest_carter/python/static/2019083/US_eMAE_NDVI.2019.077-083.QKM.VI_NDVI.006.2019084044121.tif  
+  inflating: /home/forest_carter/python/static/2019083/US_eMAE_NDVI.2019.077-083.QKM.VI_QUAL.006.2019084044121.tif  
+Creating output file that is 23163P x 10747L.
+Processing input file /home/forest_carter/python/static/2019104/US_eMAE_NDVI.2019.098-104.QKM.VI_NDVI.006.2019105043718.tif.
+Creating output file that is 23163P x 10747L.
+Processing input file /home/forest_carter/python/static/2019104/US_eMAE_NDVI.2019.098-104.QKM.VI_QUAL.006.2019105043718.tif.
+/home/forest_carter/python/gdal_calc.py:272: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  myNDVs=1*numpy.logical_or(myNDVs==1, myval==myNDV[i])
+0 .. 10 .. 20 .. 30 .. 40 .. 50 .. 60 .. 70 .. 80 .. 90 .. 100 - Done
+2019-04-16 00:00:02.215914
+2019-04-16 00:00:02.250467
+['/usr/bin/wget', '-O', '/home/forest_carter/python/static/2019104.html.tmp', '--no-proxy', '-t', '3', '-o', '/home/forest_carter/python/static/dlhtml.txt', '--no-check-certificate', '-L', '--user=fcarter', '--password=dS6oaPNwEAB7', '--no-parent', '-A', 'US_eMAE_NDVI.2019.*.QKM.*.zip', 'https://dds.cr.usgs.gov/highvolume/emodis_v6/CONUS6/expedited/AQUA/2019/comp_104/']
+date 2019104 set to true
+('target is ', 'US_eMAE_NDVI.2019.098-104.QKM.COMPRES.006.2019105050911.zip')
+['/usr/bin/wget', '--no-proxy', '-t', '3', '-o', '/home/forest_carter/python/static/dldata.txt', '-O', '/home/forest_carter/python/static/2019104.zip', '--no-check-certificate', '-L', '--user=fcarter', '--password=dS6oaPNwEAB7', 'https://dds.cr.usgs.gov/highvolume/emodis_v6/CONUS6/expedited/AQUA/2019/comp_104/US_eMAE_NDVI.2019.098-104.QKM.COMPRES.006.2019105050911.zip']
+startingunzip
+/usr/bin/unzip /home/forest_carter/python/static/2019104.zip -d /home/forest_carter/python/static/2019104
+2019-04-16 00:05:45.031240
+['/usr/bin/wget', '-O', '/home/forest_carter/python/static/2019097.html.tmp', '--no-proxy', '-t', '3', '-o', '/home/forest_carter/python/static/dlhtml.txt', '--no-check-certificate', '-L', '--user=fcarter', '--password=dS6oaPNwEAB7', '--no-parent', '-A', 'US_eMAE_NDVI.2019.*.QKM.*.zip', 'https://dds.cr.usgs.gov/highvolume/emodis_v6/CONUS6/expedited/AQUA/2019/comp_097/']
+date 2019097 set to true
+('target is ', 'US_eMAE_NDVI.2019.091-097.QKM.COMPRES.006.2019098050856.zip')
+['/usr/bin/wget', '--no-proxy', '-t', '3', '-o', '/home/forest_carter/python/static/dldata.txt', '-O', '/home/forest_carter/python/static/2019097.zip', '--no-check-certificate', '-L', '--user=fcarter', '--password=dS6oaPNwEAB7', 'https://dds.cr.usgs.gov/highvolume/emodis_v6/CONUS6/expedited/AQUA/2019/comp_097/US_eMAE_NDVI.2019.091-097.QKM.COMPRES.006.2019098050856.zip']
+startingunzip
+/usr/bin/unzip /home/forest_carter/python/static/2019097.zip -d /home/forest_carter/python/static/2019097
+2019-04-16 00:10:01.325662
+['/usr/bin/wget', '-O', '/home/forest_carter/python/static/2019090.html.tmp', '--no-proxy', '-t', '3', '-o', '/home/forest_carter/python/static/dlhtml.txt', '--no-check-certificate', '-L', '--user=fcarter', '--password=dS6oaPNwEAB7', '--no-parent', '-A', 'US_eMAE_NDVI.2019.*.QKM.*.zip', 'https://dds.cr.usgs.gov/highvolume/emodis_v6/CONUS6/expedited/AQUA/2019/comp_090/']
+date 2019090 set to true
+('target is ', 'US_eMAE_NDVI.2019.084-090.QKM.COMPRES.006.2019091183818.zip')
+['/usr/bin/wget', '--no-proxy', '-t', '3', '-o', '/home/forest_carter/python/static/dldata.txt', '-O', '/home/forest_carter/python/static/2019090.zip', '--no-check-certificate', '-L', '--user=fcarter', '--password=dS6oaPNwEAB7', 'https://dds.cr.usgs.gov/highvolume/emodis_v6/CONUS6/expedited/AQUA/2019/comp_090/US_eMAE_NDVI.2019.084-090.QKM.COMPRES.006.2019091183818.zip']
+startingunzip
+/usr/bin/unzip /home/forest_carter/python/static/2019090.zip -d /home/forest_carter/python/static/2019090
+2019-04-16 00:15:23.277672
+['/usr/bin/wget', '-O', '/home/forest_carter/python/static/2019083.html.tmp', '--no-proxy', '-t', '3', '-o', '/home/forest_carter/python/static/dlhtml.txt', '--no-check-certificate', '-L', '--user=fcarter', '--password=dS6oaPNwEAB7', '--no-parent', '-A', 'US_eMAE_NDVI.2019.*.QKM.*.zip', 'https://dds.cr.usgs.gov/highvolume/emodis_v6/CONUS6/expedited/AQUA/2019/comp_083/']
+date 2019083 set to true
+('target is ', 'US_eMAE_NDVI.2019.077-083.QKM.COMPRES.006.2019084051159.zip')
+['/usr/bin/wget', '--no-proxy', '-t', '3', '-o', '/home/forest_carter/python/static/dldata.txt', '-O', '/home/forest_carter/python/static/2019083.zip', '--no-check-certificate', '-L', '--user=fcarter', '--password=dS6oaPNwEAB7', 'https://dds.cr.usgs.gov/highvolume/emodis_v6/CONUS6/expedited/AQUA/2019/comp_083/US_eMAE_NDVI.2019.077-083.QKM.COMPRES.006.2019084051159.zip']
+startingunzip
+/usr/bin/unzip /home/forest_carter/python/static/2019083.zip -d /home/forest_carter/python/static/2019083
+deleted tilespath
+raster2pgsql -s 4326 -t auto -I -C -M -F gdal_calc.tif public.20191Processing 1/1: gdal_calc.tif
+INFO: Using computed tile size: 74x54
+NOTICE:  Adding SRID constraint
+NOTICE:  Adding scale-X constraint
+NOTICE:  Adding scale-Y constraint
+NOTICE:  Adding blocksize-X constraint
+NOTICE:  Adding blocksize-Y constraint
+NOTICE:  Adding alignment constraint
+NOTICE:  Adding number of bands constraint
+NOTICE:  Adding pixel type constraint
+NOTICE:  Adding nodata value constraint
+NOTICE:  Adding out-of-database constraint
+NOTICE:  Adding maximum extent constraint
+Creating output file that is 23163P x 10747L.
+Processing input file /home/forest_carter/python/static/2019097/US_eMAE_NDVI.2019.091-097.QKM.VI_NDVI.006.2019098043832.tif.
+Creating output file that is 23163P x 10747L.
+Processing input file /home/forest_carter/python/static/2019097/US_eMAE_NDVI.2019.091-097.QKM.VI_QUAL.006.2019098043832.tif.
+/home/forest_carter/python/gdal_calc.py:272: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  myNDVs=1*numpy.logical_or(myNDVs==1, myval==myNDV[i])
+0 .. 10 .. 20 .. 30 .. 40 .. 50 .. 60 .. 70 .. 80 .. 90 .. 100 - Done
+/home/forest_carter/python/gdal_calc.py:272: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  myNDVs=1*numpy.logical_or(myNDVs==1, myval==myNDV[i])
+0 .. 10 .. 20 .. 30 .. 40 .. 50 .. 60 .. 70 .. 80 .. 90 .. 100 - Done
+Generating Base Tiles:
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Generating Overview Tiles:
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 23163P x 10747L.
+Processing input file /home/forest_carter/python/static/2019090/US_eMAE_NDVI.2019.084-090.QKM.VI_NDVI.006.2019091180541.tif.
+Creating output file that is 23163P x 10747L.
+Processing input file /home/forest_carter/python/static/2019090/US_eMAE_NDVI.2019.084-090.QKM.VI_QUAL.006.2019091180541.tif.
+/home/forest_carter/python/gdal_calc.py:272: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  myNDVs=1*numpy.logical_or(myNDVs==1, myval==myNDV[i])
+0 .. 10 .. 20 .. 30 .. 40 .. 50 .. 60 .. 70 .. 80 .. 90 .. 100 - Done
+/home/forest_carter/python/gdal_calc.py:272: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  myNDVs=1*numpy.logical_or(myNDVs==1, myval==myNDV[i])
+0 .. 10 .. 20 .. 30 .. 40 .. 50 .. 60 .. 70 .. 80 .. 90 .. 100 - Done
+Generating Base Tiles:
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Generating Overview Tiles:
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Creating output file that is 23163P x 10747L.
+Processing input file /home/forest_carter/python/static/2019083/US_eMAE_NDVI.2019.077-083.QKM.VI_NDVI.006.2019084044121.tif.
+Creating output file that is 23163P x 10747L.
+Processing input file /home/forest_carter/python/static/2019083/US_eMAE_NDVI.2019.077-083.QKM.VI_QUAL.006.2019084044121.tif.
+/home/forest_carter/python/gdal_calc.py:272: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  myNDVs=1*numpy.logical_or(myNDVs==1, myval==myNDV[i])
+0 .. 10 .. 20 .. 30 .. 40 .. 50 .. 60 .. 70 .. 80 .. 90 .. 100 - Done
+/home/forest_carter/python/gdal_calc.py:272: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  myNDVs=1*numpy.logical_or(myNDVs==1, myval==myNDV[i])
+0 .. 10 .. 20 .. 30 .. 40 .. 50 .. 60 .. 70 .. 80 .. 90 .. 100 - Done
+Generating Base Tiles:
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Generating Overview Tiles:
+0...10...20...30...40...50...60...70...80...90...100 - done.
+04 | PGPASSWORD=pcsemarnat! psql -U root -d ndvidb2
+2019-04-17 00:55:24.576196
+deleted static
