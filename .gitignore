@@ -87,5 +87,7 @@ docker-entrypoint-initdb.d/dump.pgdata
 
 gatsby/cypress/screenshots/
 gatsby/cypress/videos/
+python/static
+python/static2
 
 
