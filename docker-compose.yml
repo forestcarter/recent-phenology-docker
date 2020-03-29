@@ -53,6 +53,11 @@ services:
             dockerfile: Dockerfile-gdal
         env_file:
             - .env
+        environment:
+            - USGSUSERNAME=${USGSUSERNAME}
+						- USGSPASSWORD=${USGSPASSWORD}
+						- POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
         volumes:
             - ./python:/python
         tty: true

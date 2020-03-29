@@ -1,9 +1,0 @@
-- requirements
-    srid: "ESPG 3627"
-    huc_8: "Integer referring to huc 8 (This should equal id if geometry is huc8)"
-    state: "Nice to have"
-
-- steps 
-    database: "save to Postgres"
-    geoserver: "Add layer and enable MapBox tiles"
-    map_layers: "Insert row into map_layers table"
