@@ -53,7 +53,7 @@ class ProductionConfig(Config):
     Requires the environment variable `FLASK_ENV=prod`
     """
 
-    name = "webclient"
+    name = "postgres"
 
     password = os.environ.get(
         "WEBCLIENT_PW"

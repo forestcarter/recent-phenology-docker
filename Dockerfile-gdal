@@ -10,10 +10,10 @@ RUN echo deb http://ftp.uk.debian.org/debian unstable main contrib non-free >> /
 RUN apt-get update
 
 # Install PostGIS
-RUN apt-get -t unstable install -y postgresql-10-postgis-2.4
+#RUN apt-get -t unstable install -y postgresql-10-postgis-2.4
 
 # Update privs to allow Postgres to run locally
-RUN sed -i "s/local   all             postgres                                peer/local   all             postgres                                trust/" /etc/postgresql/10/main/pg_hba.conf
+#RUN sed -i "s/local   all             postgres                                peer/local   all             postgres                                trust/" /etc/postgresql/10/main/pg_hba.conf
 
 # Existing binutils causes a dependency conflict, correct version will be installed when GDAL gets intalled
 RUN apt-get remove -y binutils
@@ -26,8 +26,8 @@ ENV CPLUS_INCLUDE_PATH=/usr/include/gdal
 ENV C_INCLUDE_PATH=/usr/include/gdal
 
 # This will install latest version of GDAL
-RUN pip install GDAL>=2.2.4
 RUN pip install numpy
+RUN pip install GDAL>=2.2.4
 RUN apt-get -y install qgis
 
 # Install NodeJS, for any JS work

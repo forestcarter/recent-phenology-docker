@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Flask Boilerplate`,
-    description: `Flask Boilerplate`,
+    title: `Recent Phenology`,
+    description: `Recent Phenology`,
     author: `Forest Carter`,
   },
   plugins: [

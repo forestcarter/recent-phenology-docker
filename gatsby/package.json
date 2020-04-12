@@ -1,7 +1,7 @@
 {
   "name": "hydro",
   "private": true,
-  "description": "Hydro App",
+  "description": "Recent Phenology",
   "version": "0.1.0",
   "author": "Forest Carter <carterfd@ornl.gov>",
   "dependencies": {
