@@ -26,7 +26,7 @@ def create_app(test_config=None):
     app = create_app()
 
     if __main__ == "__name__":
-        app.run()
+            app.run()
     """
     app = Flask(__name__)
 
@@ -35,12 +35,24 @@ def create_app(test_config=None):
         # send_static_file will guess the correct MIME type
         return app.send_static_file('index.html')
 
+    # @app.route("/tiles4/<int:zoom>/<int:x>/<int:y>.png")
+    # def tile(x, y, zoom):
+    #     return app.send_static_file('tiles4/2020086-2020065/{0}/{1}/{2}.png'.format(x, y, zoom))
+    @app.route("/tiles4/<string:dates>/<int:zoom>/<int:x>/<int:y>")
+    def tile(dates, zoom, x, y):
+        return app.send_static_file('tiles4/{3}/{0}/{1}/{2}.png'.format(zoom, x, y, dates))
+
     @app.route('/<path:path>', strict_slashes=False)
     def static_proxy(path=None):
+
         if str(path) in ['page-2', 'page-3', "404"]:
             return app.send_static_file('{}/index.html'.format(path))
         return app.send_static_file('{}'.format(path))
 
+    # @app.route('/tiles>', strict_slashes=False)
+    # def tiles(path=None):
+
+    #     return app.send_static_file('{}'.format(path))
     CORS(app)  # add CORS
 
     # check environment variables to see which config to load
@@ -56,6 +68,7 @@ def create_app(test_config=None):
     else:
         # config dict is from api/config.py
         app.config.from_object(config[env])
+        print(config[env].SQLALCHEMY_DATABASE_URI)
 
     # logging
     formatter = RequestFormatter(

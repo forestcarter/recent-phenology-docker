@@ -8,7 +8,7 @@ const Container = styled.div`
   background-color: #fff;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "map content1"

@@ -92,4 +92,6 @@ python/static2
 
 
 api/public
+api/static
+
 gatsby/static

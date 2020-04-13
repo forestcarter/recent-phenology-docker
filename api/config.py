@@ -53,7 +53,7 @@ class ProductionConfig(Config):
     Requires the environment variable `FLASK_ENV=prod`
     """
 
-    name = "postgres"
+    name = "webclient"
 
     password = os.environ.get(
         "WEBCLIENT_PW"
@@ -61,7 +61,10 @@ class ProductionConfig(Config):
     db = os.environ.get(
         "POSTGRES_DB"
     )
-    SQLALCHEMY_DATABASE_URI = "postgresql://{0}:{1}@postgres-{2}/{2}".format(
+    # SQLALCHEMY_DATABASE_URI = "postgresql://{0}:{1}@localhost/{2}".format(
+    #     name, password, db)
+
+    SQLALCHEMY_DATABASE_URI = "postgresql://{0}:{1}@postgres-phen/{2}".format(
         name, password, db)
     DEBUG = False
 
