@@ -95,3 +95,6 @@ api/public
 api/static
 
 gatsby/static
+
+python/*.txt
+python/*.log

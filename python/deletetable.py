@@ -11,6 +11,6 @@ if len(julday)==2:
     julday="0"+julday
 
 tablename=str(mytargetdate.year)+str(julday)
-deletesql = "PGPASSWORD=passwordhere psql -U root -d ndvidb2 -c 'drop table IF EXISTS \"{0}\"'".format(tablename)
+deletesql = "PGPASSWORD=pcsemarnat! psql -U root -d ndvidb2 -c 'drop table IF EXISTS \"{0}\"'".format(tablename)
 print(deletesql)
 suboutput = subprocess.call(deletesql,shell=True)
